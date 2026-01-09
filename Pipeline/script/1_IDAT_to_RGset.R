@@ -141,7 +141,7 @@ rm(locations, filenames, missing_files, NegControls, unknown_files)
 # BEADCOUNTS
 ################################################################################
 
-print("Step 2/3: Identify samples with a lot bead count.")
+print("Step 2/3: Identify probes with a lot bead count.")
 
 # GET BEAD COUNTS
 bc <- beadcount(RGset)
