@@ -142,7 +142,7 @@ dev.off()
 
 
 ################################################################################
-# GET CPGS ON AUTOSOMES, SNP PROBES & SAMPLE NAMES
+# GET CPGS ON AUTOSOMES
 ################################################################################
 
 # EXTRACT CPGs THAT ARE NOT ON SEX CHROMOSOMES FROM ANNOTATION FILE
@@ -401,4 +401,5 @@ suppressWarnings({
 
 
 rm(list = ls());gc()
+
 
