@@ -1,0 +1,20 @@
+---
+title: "QC - PART ONE"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+header-includes: "\\usepackage[export]{adjustbox}\n\\let\\includegraphicsbak\\includegraphics\n\\renewcommand*{\\includegraphics}[2][]{\\includegraphicsbak[frame,#1]{#2}}
+  \n"
+---
+
+
+# Sex check
+
+Sex mismatches are shown in the plot below
+
+```{r, width="2500px", out.height="500px", message=FALSE, echo=FALSE}
+knitr::include_graphics(file.path(dir_gen,"output/Figures/Sex_plot_mismatch.pdf"))
+
+
+```
