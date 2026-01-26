@@ -4,7 +4,9 @@ Here, we provide an example MWAS pipeline from raw IDAT files to a case-control 
 
 Please read the Guide carefully before you start using this pipeline. 
 
-For the Resources folder, you need to add the respective Illumina manifest file manually:
+Download the Resources folder from OneDrive: https://universityofbergen-my.sharepoint.com/:f:/g/personal/kira_hoeffler_uib_no/IgDy_tQ8RcM2SIRQi6KqKwisAbLa_75LqX5Kmpj2Zn37WKY?e=0Hj13G
+
+Alternatively, download the folder here from Github and add the following objects/files manually:
 - run the provided download_FlowSorted.Blood.EPIC_RGset script, save the RGset in the Resources folder
 1. 450K: download HumanMethylation450 v1.2 Manifest File (CSV Format) from https://support.illumina.com/downloads/infinium_humanmethylation450_product_files.html, rename the csv file to 450K_manifest.csv and move it to the resources folder.
 2. EPICv1: download Infinium MethylationEPIC v1.0 B5 Manifest File (CSV Format) from https://support.illumina.com/downloads/infinium-methylationepic-v1-0-product-files.html, unpack the zip folder, rename the csv file to EPICv1_manifest.csv and move it to the resources folder.
