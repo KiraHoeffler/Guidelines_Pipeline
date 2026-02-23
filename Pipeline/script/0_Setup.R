@@ -75,7 +75,7 @@ if(length(missing_columns)>0){
 if(phenotype=="case_control"){
   missing_columns = setdiff(c("Case_Control"),colnames(samplesheet))
   if(length(missing_columns)>0){
-    print("The Case_Control column is missing or spelled incorrectly in the samplesheet")
+    stop("The Case_Control column is missing or spelled incorrectly in the samplesheet")
   }
   if(length(setdiff(c("Case","Ctrl"),levels(factor(samplesheet$Case_Control))))>0){
     stop("PIPELINE STOPPED: Please check that the Case_Control column is coded as 'Case' and 'Ctrl'")
@@ -89,7 +89,7 @@ if(phenotype=="case_control"){
 if(phenotype=="continuous"){
   missing_columns = setdiff(c("pheno_cont"),colnames(samplesheet))
   if(length(missing_columns)>0){
-    print("The pheno_cont column is missing or spelled incorrectly in the samplesheet")
+    stop("The pheno_cont column is missing or spelled incorrectly in the samplesheet")
   }
   if(any(is.na(samplesheet$pheno_cont))){
     stop("PIPELINE STOPPED: Please check that there is no NA in the pheno_cont column")
