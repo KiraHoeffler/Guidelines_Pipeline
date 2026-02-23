@@ -97,7 +97,7 @@ continPhenotype <- as.numeric(samples$pheno_cont)
 Sex <- factor(samples$Sex)
 
 # CELL TYPE PCs
-cellcounts_df <- cellcounts$prop[, c(1:2, 10)]
+cellcounts_df <- cellcounts$prop
 cellcounts_df = cellcounts_df[sample_names, ]
 
 cell_PCs = prcomp(cellcounts_df)
